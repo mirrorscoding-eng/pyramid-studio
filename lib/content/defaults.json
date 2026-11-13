@@ -1,0 +1,1307 @@
+{
+  "settings": {
+    "eyebrow": {
+      "ar": "هرم للتسويق والإنتاج الإبداعي",
+      "en": "Pyramid — marketing & creative production"
+    },
+    "about": {
+      "ar": "استوديو هرم هو فريق تسويق مختص بإنتاج المحتوى الفني والتجاري والتوعوي، يجمع بين التخطيط التسويقي، صناعة المحتوى، الإنتاج البصري وادارة المنصات الألكترونية مع الالتزام بالجودة وسرعة التنفيذ والتسليم.",
+      "en": "Pyramid Studio is a marketing team specialised in artistic, commercial and awareness content. We bring together marketing planning, content creation, visual production and social platform management — with a commitment to quality and fast delivery."
+    },
+    "aboutImage": "https://pyramidstudio.co/assets/images/about/about.webp",
+    "phones": [
+      "+964 785 800 8800",
+      "+964 771 101 1006"
+    ],
+    "whatsapp": "+964 785 800 8800",
+    "email": "iqpyramid@gmail.com",
+    "instagram": "pyramid.iq",
+    "studio": "pyramid_studio1",
+    "threads": "pyramid.iq",
+    "website": "www.pyramidstudio.co",
+    "hashtag": "قيمتها_بمحتواها",
+    "years": 10,
+    "projects": 1000,
+    "clientsCount": 50,
+    "followers": 2792,
+    "posts": 106
+  },
+  "texts": {
+    "brand": {
+      "ar": "هرم",
+      "en": "Pyramid"
+    },
+    "nav_home": {
+      "ar": "الرئيسية",
+      "en": "Home"
+    },
+    "nav_about": {
+      "ar": "من نحن",
+      "en": "About"
+    },
+    "nav_services": {
+      "ar": "الخدمات",
+      "en": "Services"
+    },
+    "nav_work": {
+      "ar": "الأعمال",
+      "en": "Work"
+    },
+    "nav_contact": {
+      "ar": "تواصل معنا",
+      "en": "Contact"
+    },
+    "cta": {
+      "ar": "ابدأ مشروعك",
+      "en": "Start a project"
+    },
+    "see_work": {
+      "ar": "شاهد أعمالنا",
+      "en": "See our work"
+    },
+    "how": {
+      "ar": "آلية العمل",
+      "en": "How we work"
+    },
+    "fc1_s": {
+      "ar": "سنوات خبرة بالتسويق والإنتاج الإبداعي.",
+      "en": "years of marketing and creative production."
+    },
+    "fc2_s": {
+      "ar": "مشروع منجز لعملاء بمختلف القطاعات.",
+      "en": "projects delivered across many sectors."
+    },
+    "trust": {
+      "ar": "يتابعون شغلنا على إنستغرام",
+      "en": "follow our work on Instagram"
+    },
+    "less": {
+      "ar": "نفهم. نخطط. ننفذ.",
+      "en": "Understand. Plan. Deliver."
+    },
+    "know_more": {
+      "ar": "اعرف أكثر عنا",
+      "en": "More about us"
+    },
+    "orbit_label": {
+      "ar": "نماذج من أعمال وخدمات هرم تدور حول الشعار",
+      "en": "Pyramid work and services orbiting the logo"
+    },
+    "orbit_hint": {
+      "ar": "اسحب حتى تلف ✦ اضغط على أي فيديو",
+      "en": "Drag to spin ✦ tap any video"
+    },
+    "open_ig": {
+      "ar": "فتح على إنستغرام",
+      "en": "Open on Instagram"
+    },
+    "approach_k": {
+      "ar": "نهجنا",
+      "en": "Our approach"
+    },
+    "feat_k": {
+      "ar": "نماذج من أعمالنا",
+      "en": "Selected work"
+    },
+    "feat_h1": {
+      "ar": "شغل",
+      "en": "Work"
+    },
+    "feat_h2": {
+      "ar": "يحچي عن نفسه.",
+      "en": "that speaks for itself."
+    },
+    "all_work": {
+      "ar": "كل الأعمال",
+      "en": "All work"
+    },
+    "stats_k": {
+      "ar": "النتائج والخبرات",
+      "en": "Results & experience"
+    },
+    "st_years": {
+      "ar": "سنوات خبرة",
+      "en": "Years of experience"
+    },
+    "st_projects": {
+      "ar": "مشروع منجز",
+      "en": "Projects delivered"
+    },
+    "st_clients": {
+      "ar": "عميل",
+      "en": "Clients"
+    },
+    "st_followers": {
+      "ar": "متابع على إنستغرام",
+      "en": "Instagram followers"
+    },
+    "clients_k": {
+      "ar": "عملاؤنا وشركاؤنا",
+      "en": "Clients & partners"
+    },
+    "cta_h1": {
+      "ar": "خلّينا نبني",
+      "en": "Let's build"
+    },
+    "cta_h2": {
+      "ar": "هرمك.",
+      "en": "your pyramid."
+    },
+    "cta_p": {
+      "ar": "احچيلنا عن مشروعك، ونرجعلك بخطة واضحة.",
+      "en": "Tell us about your project and we'll come back with a clear plan."
+    },
+    "whatsapp": {
+      "ar": "واتساب",
+      "en": "WhatsApp"
+    },
+    "ph_about_k": {
+      "ar": "من نحن",
+      "en": "About us"
+    },
+    "ph_about_1": {
+      "ar": "فريق واحد،",
+      "en": "One team,"
+    },
+    "ph_about_2": {
+      "ar": "هرم من الخبرات.",
+      "en": "a pyramid of skills."
+    },
+    "ph_about_p": {
+      "ar": "مخططين، كتّاب، مصممين، مصورين ومونتيرية — نشتغل سوية من أول فكرة لآخر تقرير.",
+      "en": "Planners, writers, designers, shooters and editors — working together from the first idea to the last report."
+    },
+    "ph_services_k": {
+      "ar": "الخدمات",
+      "en": "Services"
+    },
+    "ph_services_1": {
+      "ar": "كل اللي يحتاجه",
+      "en": "Everything your"
+    },
+    "ph_services_2": {
+      "ar": "محتواك.",
+      "en": "content needs."
+    },
+    "ph_services_p": {
+      "ar": "من تحليل المشروع وكتابة الخطة، للتصوير والمونتاج، للنشر والترويج والتقارير.",
+      "en": "From analysis and planning, to shooting and editing, to publishing, promotion and reporting."
+    },
+    "ph_work_k": {
+      "ar": "الأعمال",
+      "en": "Work"
+    },
+    "ph_work_1": {
+      "ar": "نماذج",
+      "en": "Selected"
+    },
+    "ph_work_2": {
+      "ar": "من أعمالنا.",
+      "en": "projects."
+    },
+    "ph_work_p": {
+      "ar": "ريلز وحملات صنعناها ويا عملائنا. اضغط على أي عمل حتى تشوفه.",
+      "en": "Reels and campaigns we made with our clients. Tap any project to view it."
+    },
+    "ph_contact_k": {
+      "ar": "تواصل معنا",
+      "en": "Contact"
+    },
+    "ph_contact_1": {
+      "ar": "خلّينا نحچي",
+      "en": "Let's talk"
+    },
+    "ph_contact_2": {
+      "ar": "عن مشروعك.",
+      "en": "about your project."
+    },
+    "ph_contact_p": {
+      "ar": "املأ النموذج أو راسلنا مباشرة على واتساب، وفريقنا يرجعلك بأقرب وقت.",
+      "en": "Fill in the form or message us on WhatsApp — our team will get back to you shortly."
+    },
+    "about_k": {
+      "ar": "عن استوديو هرم",
+      "en": "About Pyramid Studio"
+    },
+    "years_exp": {
+      "ar": "سنوات خبرة",
+      "en": "years of experience"
+    },
+    "team_k": {
+      "ar": "فريق العمل",
+      "en": "The team"
+    },
+    "team_h1": {
+      "ar": "الناس",
+      "en": "The people"
+    },
+    "team_h2": {
+      "ar": "ورا الشغل.",
+      "en": "behind the work."
+    },
+    "services_k": {
+      "ar": "الخدمات",
+      "en": "Services"
+    },
+    "process_k": {
+      "ar": "آلية العمل",
+      "en": "How we work"
+    },
+    "process_h1": {
+      "ar": "ستّ خطوات،",
+      "en": "Six steps,"
+    },
+    "process_h2": {
+      "ar": "نتيجة وحدة.",
+      "en": "one result."
+    },
+    "process_p": {
+      "ar": "كل مشروع نبنيه مثل الهرم: نبدأ بفهم واسع، ونضيّق خطوة بخطوة لحد ما نوصل لنقطة وحدة واضحة — النتيجة.",
+      "en": "We build every project like a pyramid: start wide with understanding, narrow step by step, and arrive at one clear point — the result."
+    },
+    "all": {
+      "ar": "الكل",
+      "en": "All"
+    },
+    "empty": {
+      "ar": "ماكو أعمال بهذا التصنيف بعد.",
+      "en": "No work in this category yet."
+    },
+    "client": {
+      "ar": "العميل",
+      "en": "Client"
+    },
+    "year": {
+      "ar": "السنة",
+      "en": "Year"
+    },
+    "category": {
+      "ar": "التصنيف",
+      "en": "Category"
+    },
+    "services": {
+      "ar": "الخدمات",
+      "en": "Services"
+    },
+    "watch_ig": {
+      "ar": "مشاهدة على إنستغرام",
+      "en": "Watch on Instagram"
+    },
+    "visit": {
+      "ar": "زيارة المشروع",
+      "en": "Visit project"
+    },
+    "form_h": {
+      "ar": "اطلب عرض سعر",
+      "en": "Request a quote"
+    },
+    "form_p": {
+      "ar": "الحقول اللي عليها * مطلوبة.",
+      "en": "Fields marked * are required."
+    },
+    "f_name": {
+      "ar": "الاسم",
+      "en": "Name"
+    },
+    "f_company": {
+      "ar": "اسم الشركة/المشروع",
+      "en": "Company / project"
+    },
+    "f_phone": {
+      "ar": "رقم الهاتف",
+      "en": "Phone"
+    },
+    "f_email": {
+      "ar": "البريد الإلكتروني",
+      "en": "Email"
+    },
+    "f_service": {
+      "ar": "الخدمة المطلوبة",
+      "en": "Service needed"
+    },
+    "f_budget": {
+      "ar": "الميزانية المتوقعة",
+      "en": "Expected budget"
+    },
+    "f_message": {
+      "ar": "رسالتك",
+      "en": "Your message"
+    },
+    "optional": {
+      "ar": "(اختياري)",
+      "en": "(optional)"
+    },
+    "f_send": {
+      "ar": "إرسال",
+      "en": "Send"
+    },
+    "sent": {
+      "ar": "وصل طلبك! راح نتواصل وياك قريباً.",
+      "en": "Got it! We'll be in touch soon."
+    },
+    "required": {
+      "ar": "اكتب الاسم ورقم الهاتف رجاءً.",
+      "en": "Please add your name and phone."
+    },
+    "saveFail": {
+      "ar": "ما گدرنا نحفظ الطلب، جرّب مرة ثانية.",
+      "en": "Couldn't save your request, please try again."
+    },
+    "i_wa": {
+      "ar": "واتساب",
+      "en": "WhatsApp"
+    },
+    "i_phone": {
+      "ar": "اتصال",
+      "en": "Call"
+    },
+    "i_mail": {
+      "ar": "البريد",
+      "en": "Email"
+    },
+    "i_ig": {
+      "ar": "إنستغرام",
+      "en": "Instagram"
+    },
+    "i_studio": {
+      "ar": "حساب الستوديو",
+      "en": "Studio account"
+    },
+    "hours_t": {
+      "ar": "أوقات الرد",
+      "en": "Response time"
+    },
+    "hours_p": {
+      "ar": "نرد على الرسائل خلال يوم عمل واحد.",
+      "en": "We reply to messages within one working day."
+    },
+    "f_pages": {
+      "ar": "الصفحات",
+      "en": "Pages"
+    },
+    "f_contact": {
+      "ar": "تواصل",
+      "en": "Contact"
+    },
+    "f_follow": {
+      "ar": "تابعنا",
+      "en": "Follow"
+    },
+    "dashboard": {
+      "ar": "لوحة التحكم",
+      "en": "Dashboard"
+    },
+    "rights": {
+      "ar": "استوديو هرم — كل الحقوق محفوظة.",
+      "en": "Pyramid Studio — all rights reserved."
+    },
+    "meta_home": {
+      "ar": "استوديو هرم | تسويق وإنتاج محتوى",
+      "en": "Pyramid Studio | Marketing & content production"
+    },
+    "meta_about": {
+      "ar": "من نحن | استوديو هرم",
+      "en": "About | Pyramid Studio"
+    },
+    "meta_services": {
+      "ar": "الخدمات | استوديو هرم",
+      "en": "Services | Pyramid Studio"
+    },
+    "meta_work": {
+      "ar": "الأعمال | استوديو هرم",
+      "en": "Work | Pyramid Studio"
+    },
+    "meta_contact": {
+      "ar": "تواصل معنا | استوديو هرم",
+      "en": "Contact | Pyramid Studio"
+    },
+    "meta_desc": {
+      "ar": "استوديو هرم — فريق تسويق مختص بإنتاج المحتوى الفني والتجاري والتوعوي.",
+      "en": "Pyramid Studio — a marketing team producing artistic, commercial and awareness content."
+    }
+  },
+  "services": [
+    {
+      "id": "analysis",
+      "art": "analysis",
+      "title": {
+        "ar": "تحليل وفهم المشروع",
+        "en": "Project analysis"
+      },
+      "desc": {
+        "ar": "ندرس مشروعك، جمهورك، منافسينك وميزانيتك التسويقية قبل ما نكتب أي خطة.",
+        "en": "We study your project, audience, competitors and marketing budget before writing any plan."
+      }
+    },
+    {
+      "id": "plans",
+      "art": "plans",
+      "title": {
+        "ar": "إنشاء الخطط التسويقية",
+        "en": "Marketing plans"
+      },
+      "desc": {
+        "ar": "خطة واضحة تحدد المحتوى، المنصات، الجدول الزمني وآلية التنفيذ.",
+        "en": "A clear plan covering content, platforms, timeline and how it gets done."
+      }
+    },
+    {
+      "id": "reports",
+      "art": "reports",
+      "title": {
+        "ar": "تقديم التقارير",
+        "en": "Reporting"
+      },
+      "desc": {
+        "ar": "تقارير دورية واضحة عن التنفيذ والأداء، مع اقتراحات للخطوة الجاية.",
+        "en": "Clear, regular reports on delivery and performance, with next-step recommendations."
+      }
+    },
+    {
+      "id": "content",
+      "art": "content",
+      "title": {
+        "ar": "كتابة المحتوى",
+        "en": "Content writing"
+      },
+      "desc": {
+        "ar": "أفكار، سكربتات ونصوص إعلانية تحچي بلغة جمهورك.",
+        "en": "Ideas, scripts and ad copy in your audience's language."
+      }
+    },
+    {
+      "id": "social",
+      "art": "social",
+      "title": {
+        "ar": "إدارة منصات التواصل الاجتماعي",
+        "en": "Social media management"
+      },
+      "desc": {
+        "ar": "نشر منتظم، تفاعل مع الجمهور، وإدارة كاملة لحساباتك.",
+        "en": "Consistent publishing, community engagement and full account management."
+      }
+    },
+    {
+      "id": "web",
+      "art": "web",
+      "title": {
+        "ar": "تطوير المنصات الإلكترونية",
+        "en": "Digital platforms"
+      },
+      "desc": {
+        "ar": "مواقع وصفحات سريعة ومرتبة تحوّل الزائر لزبون.",
+        "en": "Fast, tidy websites and pages that turn visitors into customers."
+      }
+    },
+    {
+      "id": "photo",
+      "art": "photo",
+      "title": {
+        "ar": "التصوير الاحترافي",
+        "en": "Professional shooting"
+      },
+      "desc": {
+        "ar": "تصوير فوتوغرافي وفيديو بفريق ومعدات احترافية.",
+        "en": "Photo and video production with a professional crew and gear."
+      }
+    },
+    {
+      "id": "edit",
+      "art": "color",
+      "title": {
+        "ar": "المونتاج والتلوين",
+        "en": "Editing & colour"
+      },
+      "desc": {
+        "ar": "مونتاج بإيقاع يشد، وتلوين سينمائي يخلي المحتوى يوقف الإصبع.",
+        "en": "Punchy editing and cinematic colour that stop the scroll."
+      }
+    },
+    {
+      "id": "promo",
+      "art": "ads",
+      "title": {
+        "ar": "الترويج",
+        "en": "Promotion"
+      },
+      "desc": {
+        "ar": "حملات ممولة تستهدف الجمهور المناسب ضمن الميزانية المعتمدة.",
+        "en": "Paid campaigns that reach the right audience within the agreed budget."
+      }
+    }
+  ],
+  "orbit": [
+    {
+      "service": "content",
+      "sub": {
+        "ar": "نكتب أفكار تبيع.",
+        "en": "Ideas that sell."
+      }
+    },
+    {
+      "service": "photo",
+      "sub": {
+        "ar": "فريق ومعدات احترافية.",
+        "en": "Pro crew & gear."
+      }
+    },
+    {
+      "service": "edit",
+      "sub": {
+        "ar": "إيقاع يوقف الإصبع.",
+        "en": "Cuts that stop the scroll."
+      }
+    },
+    {
+      "service": "promo",
+      "sub": {
+        "ar": "نوصلك لجمهورك.",
+        "en": "Reach the right people."
+      }
+    },
+    {
+      "service": "social",
+      "sub": {
+        "ar": "حضور منتظم ومدروس.",
+        "en": "Consistent presence."
+      }
+    },
+    {
+      "service": "reports",
+      "sub": {
+        "ar": "أرقام واضحة كل شهر.",
+        "en": "Clear monthly numbers."
+      }
+    }
+  ],
+  "approach": [
+    {
+      "art": "analysis",
+      "heading": {
+        "ar": "نفهم المشروع قبل أن نبدأ",
+        "en": "We understand before we start"
+      },
+      "title": {
+        "ar": "تحليل وفهم المشروع",
+        "en": "Analyse the project"
+      },
+      "desc": {
+        "ar": "ندرس المشروع، الجمهور، الأهداف، الرؤية، والميزانية التسويقية قبل كتابة أي خطة.",
+        "en": "We study the project, audience, goals, vision and marketing budget before writing any plan."
+      }
+    },
+    {
+      "art": "plans",
+      "heading": {
+        "ar": "نخطط قبل أن ننتج",
+        "en": "We plan before we produce"
+      },
+      "title": {
+        "ar": "كتابة خطة تسويقية صحيحة",
+        "en": "Write the right plan"
+      },
+      "desc": {
+        "ar": "نحوّل المعلومات إلى خطة واضحة تشمل المحتوى، المنصات، الجدول الزمني، وآلية التنفيذ.",
+        "en": "We turn what we learn into a clear plan: content, platforms, timeline and execution."
+      }
+    },
+    {
+      "art": "photo",
+      "heading": {
+        "ar": "ننفذ ونسلّم بوضوح وسرعة",
+        "en": "We deliver clearly and fast"
+      },
+      "title": {
+        "ar": "تنفيذ الخطة حسب الجدول الزمني",
+        "en": "Execute on schedule"
+      },
+      "desc": {
+        "ar": "ننتج، ننشر، نروّج، ونتابع التنفيذ مع تقارير واضحة عن الأداء.",
+        "en": "We produce, publish, promote and follow up with clear performance reports."
+      }
+    }
+  ],
+  "steps": [
+    {
+      "title": {
+        "ar": "الاجتماع الأولي وفهم المشروع",
+        "en": "First meeting"
+      },
+      "desc": {
+        "ar": "نجتمع مع صاحب المشروع لفهم الاحتياجات، الرؤية، الأهداف، والجوانب المتعلقة بالميزانية التسويقية.",
+        "en": "We meet the owner to understand needs, vision, goals and the marketing budget."
+      }
+    },
+    {
+      "title": {
+        "ar": "كتابة الخطة التسويقية",
+        "en": "Writing the plan"
+      },
+      "desc": {
+        "ar": "نكتب خطة تسويقية تفصيلية مبنية على المعلومات والأهداف المتفق عليها.",
+        "en": "We write a detailed marketing plan built on the agreed information and goals."
+      }
+    },
+    {
+      "title": {
+        "ar": "الاجتماع الثاني واعتماد الخطة",
+        "en": "Plan approval"
+      },
+      "desc": {
+        "ar": "نشرح الخطة، نراجع التفاصيل، ونتفق على جدول التنفيذ.",
+        "en": "We walk through the plan, review the details and agree on the schedule."
+      }
+    },
+    {
+      "title": {
+        "ar": "التنفيذ والنشر",
+        "en": "Production & publishing"
+      },
+      "desc": {
+        "ar": "نبدأ بالإنتاج والتنفيذ والتسليم والنشر بحسب الجدول المتفق عليه.",
+        "en": "We produce, deliver and publish according to the agreed schedule."
+      }
+    },
+    {
+      "title": {
+        "ar": "الترويج",
+        "en": "Promotion"
+      },
+      "desc": {
+        "ar": "نطلق الحملات الترويجية وفق الخطة والميزانية المعتمدة، ونستهدف الجمهور المناسب لتحقيق أفضل وصول ونتائج.",
+        "en": "We launch campaigns within the approved plan and budget, targeting the right audience for the best reach."
+      }
+    },
+    {
+      "title": {
+        "ar": "التقارير والمتابعة",
+        "en": "Reports & follow-up"
+      },
+      "desc": {
+        "ar": "نقدّم تقارير واضحة عن التنفيذ والأداء ونقترح خطوات التطوير اللاحقة.",
+        "en": "Clear reports on delivery and performance, with suggested next steps."
+      }
+    }
+  ],
+  "budgets": [
+    {
+      "ar": "غير محددة",
+      "en": "Not sure yet"
+    },
+    {
+      "ar": "أقل من 500$",
+      "en": "Under $500"
+    },
+    {
+      "ar": "500$ – 1,500$",
+      "en": "$500 – $1,500"
+    },
+    {
+      "ar": "1,500$ – 5,000$",
+      "en": "$1,500 – $5,000"
+    },
+    {
+      "ar": "أكثر من 5,000$",
+      "en": "Over $5,000"
+    }
+  ],
+  "categories": [
+    {
+      "id": "reels",
+      "name": {
+        "ar": "ريلز إعلانية",
+        "en": "Promo reels"
+      }
+    },
+    {
+      "id": "social",
+      "name": {
+        "ar": "إدارة منصات",
+        "en": "Social management"
+      }
+    },
+    {
+      "id": "photo",
+      "name": {
+        "ar": "تصوير",
+        "en": "Photography"
+      }
+    },
+    {
+      "id": "ads",
+      "name": {
+        "ar": "حملات ترويجية",
+        "en": "Promotion"
+      }
+    },
+    {
+      "id": "brand",
+      "name": {
+        "ar": "تصميم",
+        "en": "Design"
+      }
+    }
+  ],
+  "works": [
+    {
+      "id": "p1",
+      "category": "reels",
+      "year": "",
+      "featured": true,
+      "cover": 0,
+      "image": "https://pyramidstudio.co/assets/images/projects/aquadiva.webp",
+      "link": "https://www.instagram.com/reel/DbDazcNsdht",
+      "title": {
+        "ar": "أكواديفا",
+        "en": "Aquadiva"
+      },
+      "client": {
+        "ar": "أكواديفا",
+        "en": "Aquadiva"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p2",
+      "category": "reels",
+      "year": "",
+      "featured": true,
+      "cover": 1,
+      "image": "https://pyramidstudio.co/assets/images/projects/nuwa.webp",
+      "link": "https://www.instagram.com/reel/DZU5-dDISY8",
+      "title": {
+        "ar": "نوى",
+        "en": "Nuwa"
+      },
+      "client": {
+        "ar": "نوى",
+        "en": "Nuwa"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p3",
+      "category": "reels",
+      "year": "",
+      "featured": true,
+      "cover": 2,
+      "image": "https://pyramidstudio.co/assets/images/projects/tanky.webp",
+      "link": "https://www.instagram.com/reel/DWRDvhcDDRZ",
+      "title": {
+        "ar": "تانكي",
+        "en": "Tanky"
+      },
+      "client": {
+        "ar": "تانكي",
+        "en": "Tanky"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p4",
+      "category": "reels",
+      "year": "",
+      "featured": true,
+      "cover": 3,
+      "image": "https://pyramidstudio.co/assets/images/projects/watar.webp",
+      "link": "https://www.instagram.com/reel/DT0d-LbDJr-",
+      "title": {
+        "ar": "وتر للاستشارات الهندسية",
+        "en": "Watar Engineering Consultancy"
+      },
+      "client": {
+        "ar": "وتر للاستشارات الهندسية",
+        "en": "Watar Engineering Consultancy"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p5",
+      "category": "reels",
+      "year": "",
+      "featured": false,
+      "cover": 4,
+      "image": "https://pyramidstudio.co/assets/images/projects/dr.mo.webp",
+      "link": "https://www.instagram.com/reel/DZQJwEZtHZ4",
+      "title": {
+        "ar": "الدكتور محمد الخفاجي",
+        "en": "Dr. Mohammed Al-Khafaji"
+      },
+      "client": {
+        "ar": "الدكتور محمد الخفاجي",
+        "en": "Dr. Mohammed Al-Khafaji"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p6",
+      "category": "reels",
+      "year": "",
+      "featured": false,
+      "cover": 5,
+      "image": "https://pyramidstudio.co/assets/images/projects/car.webp",
+      "link": "https://www.instagram.com/reel/DaS3VrHIIe7",
+      "title": {
+        "ar": "خيرات المهند",
+        "en": "Khayrat Al-Muhannad"
+      },
+      "client": {
+        "ar": "خيرات المهند",
+        "en": "Khayrat Al-Muhannad"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p7",
+      "category": "reels",
+      "year": "",
+      "featured": false,
+      "cover": 0,
+      "image": "https://pyramidstudio.co/assets/images/projects/alomix.webp",
+      "link": "https://www.instagram.com/reel/DQJc8Hcjf9Y",
+      "title": {
+        "ar": "خبراء الومكس",
+        "en": "Alumix Experts"
+      },
+      "client": {
+        "ar": "خبراء الومكس",
+        "en": "Alumix Experts"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p8",
+      "category": "reels",
+      "year": "",
+      "featured": false,
+      "cover": 1,
+      "image": "https://pyramidstudio.co/assets/images/projects/halab.webp",
+      "link": "https://www.instagram.com/reel/C-r1mfEt8Vh",
+      "title": {
+        "ar": "مطعم بيت حلب",
+        "en": "Bayt Halab Restaurant"
+      },
+      "client": {
+        "ar": "مطعم بيت حلب",
+        "en": "Bayt Halab Restaurant"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p9",
+      "category": "reels",
+      "year": "",
+      "featured": false,
+      "cover": 2,
+      "image": "https://pyramidstudio.co/assets/images/projects/care.webp",
+      "link": "https://www.instagram.com/reel/DHv-mYnNJeq",
+      "title": {
+        "ar": "كير",
+        "en": "Care"
+      },
+      "client": {
+        "ar": "كير",
+        "en": "Care"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p10",
+      "category": "reels",
+      "year": "",
+      "featured": false,
+      "cover": 3,
+      "image": "https://pyramidstudio.co/assets/images/projects/vanilly.webp",
+      "link": "https://www.instagram.com/reel/DAX_8lsKw5H",
+      "title": {
+        "ar": "فانيلي",
+        "en": "Vanilly"
+      },
+      "client": {
+        "ar": "فانيلي",
+        "en": "Vanilly"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p11",
+      "category": "reels",
+      "year": "",
+      "featured": false,
+      "cover": 4,
+      "image": "https://pyramidstudio.co/assets/images/projects/firash.webp",
+      "link": "https://www.instagram.com/reel/DRHekmLgsX6",
+      "title": {
+        "ar": "الفراش الأبيض",
+        "en": "Al-Firash Al-Abyad"
+      },
+      "client": {
+        "ar": "الفراش الأبيض",
+        "en": "Al-Firash Al-Abyad"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    },
+    {
+      "id": "p12",
+      "category": "reels",
+      "year": "",
+      "featured": false,
+      "cover": 5,
+      "image": "https://pyramidstudio.co/assets/images/projects/ja-un.webp",
+      "link": "https://www.instagram.com/reel/DBof9HBNNEy",
+      "title": {
+        "ar": "جامعة الإمام جعفر الصادق",
+        "en": "Imam Ja'far Al-Sadiq University"
+      },
+      "client": {
+        "ar": "جامعة الإمام جعفر الصادق",
+        "en": "Imam Ja'far Al-Sadiq University"
+      },
+      "summary": {
+        "ar": "ريل إعلاني من إنتاج استوديو هرم — شاهده كامل على إنستغرام.",
+        "en": "A promotional reel produced by Pyramid Studio — watch it in full on Instagram."
+      },
+      "services": [],
+      "results": []
+    }
+  ],
+  "clients": [
+    {
+      "id": "c1",
+      "name": {
+        "ar": "الدكتور محمد الخفاجي",
+        "en": "Dr. Mohammed Al-Khafaji"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/dr-mohammed-alkhafaji.png"
+    },
+    {
+      "id": "c2",
+      "name": {
+        "ar": "مطعم بيت حلب",
+        "en": "Bayt Halab Restaurant"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/bayt-halab.png"
+    },
+    {
+      "id": "c3",
+      "name": {
+        "ar": "فانيلي",
+        "en": "Vanilly"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/vanilly.png"
+    },
+    {
+      "id": "c4",
+      "name": {
+        "ar": "تانكي",
+        "en": "Tanky"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/tanky.png"
+    },
+    {
+      "id": "c5",
+      "name": {
+        "ar": "أكواديفا",
+        "en": "Aquadiva"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/aquadeva.png"
+    },
+    {
+      "id": "c6",
+      "name": {
+        "ar": "خيرات المهند",
+        "en": "Khayrat Al-Muhannad"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/khyrat-almohanad.png"
+    },
+    {
+      "id": "c7",
+      "name": {
+        "ar": "نوى",
+        "en": "Nuwa"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/nuwa.png"
+    },
+    {
+      "id": "c8",
+      "name": {
+        "ar": "وتر للاستشارات الهندسية",
+        "en": "Watar Engineering"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/watar.png"
+    },
+    {
+      "id": "c9",
+      "name": {
+        "ar": "الفراش الأبيض",
+        "en": "Al-Firash Al-Abyad"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/alfirash-alabed.png"
+    },
+    {
+      "id": "c10",
+      "name": {
+        "ar": "ألومكس البصرة",
+        "en": "Alumix Basra"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/alomix-albasra.png"
+    },
+    {
+      "id": "c11",
+      "name": {
+        "ar": "جامعة الإمام جعفر الصادق",
+        "en": "Imam Ja'far Al-Sadiq University"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/imam-jaafar-al-sadiq-university.png"
+    },
+    {
+      "id": "c12",
+      "name": {
+        "ar": "كير",
+        "en": "Care"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/care.png"
+    },
+    {
+      "id": "c13",
+      "name": {
+        "ar": "صرح هامان",
+        "en": "Sarh Haman"
+      },
+      "logo": "https://pyramidstudio.co/assets/images/clients/sarh-haman.png"
+    }
+  ],
+  "team": [
+    {
+      "id": "t1",
+      "name": {
+        "ar": "أحمد صادق",
+        "en": "Ahmed Sadiq"
+      },
+      "role": {
+        "ar": "شريك مؤسس / مدير الفريق",
+        "en": "Co-founder / Team lead"
+      }
+    },
+    {
+      "id": "t2",
+      "name": {
+        "ar": "منير أحمد",
+        "en": "Muneer Ahmed"
+      },
+      "role": {
+        "ar": "شريك مؤسس / مسوّق",
+        "en": "Co-founder / Marketer"
+      }
+    },
+    {
+      "id": "t3",
+      "name": {
+        "ar": "مريم حميد",
+        "en": "Maryam Hameed"
+      },
+      "role": {
+        "ar": "مديرة المشاريع",
+        "en": "Project manager"
+      }
+    },
+    {
+      "id": "t4",
+      "name": {
+        "ar": "مصطفى نبيل",
+        "en": "Mustafa Nabeel"
+      },
+      "role": {
+        "ar": "مدير المالية",
+        "en": "Finance manager"
+      }
+    },
+    {
+      "id": "t5",
+      "name": {
+        "ar": "مصطفى عزت",
+        "en": "Mustafa Ezzat"
+      },
+      "role": {
+        "ar": "مصمم گرافك",
+        "en": "Graphic designer"
+      }
+    },
+    {
+      "id": "t6",
+      "name": {
+        "ar": "محمد أمين",
+        "en": "Mohammed Amin"
+      },
+      "role": {
+        "ar": "مصمم گرافك",
+        "en": "Graphic designer"
+      }
+    },
+    {
+      "id": "t7",
+      "name": {
+        "ar": "أحمد عادل",
+        "en": "Ahmed Adel"
+      },
+      "role": {
+        "ar": "مصمم گرافك",
+        "en": "Graphic designer"
+      }
+    },
+    {
+      "id": "t8",
+      "name": {
+        "ar": "سارة علي",
+        "en": "Sara Ali"
+      },
+      "role": {
+        "ar": "مسؤولة المنصات الألكترونية",
+        "en": "Social platforms lead"
+      }
+    },
+    {
+      "id": "t9",
+      "name": {
+        "ar": "بنين سعد",
+        "en": "Baneen Saad"
+      },
+      "role": {
+        "ar": "كاتبة محتوى إبداعي",
+        "en": "Creative content writer"
+      }
+    },
+    {
+      "id": "t10",
+      "name": {
+        "ar": "محمد عيسى",
+        "en": "Mohammed Issa"
+      },
+      "role": {
+        "ar": "مدير تصوير",
+        "en": "Director of photography"
+      }
+    },
+    {
+      "id": "t11",
+      "name": {
+        "ar": "مبشر أحمد",
+        "en": "Mubasher Ahmed"
+      },
+      "role": {
+        "ar": "مصور فيديو",
+        "en": "Videographer"
+      }
+    },
+    {
+      "id": "t12",
+      "name": {
+        "ar": "فهمي طلال",
+        "en": "Fahmi Talal"
+      },
+      "role": {
+        "ar": "مصور فوتوغراف",
+        "en": "Photographer"
+      }
+    },
+    {
+      "id": "t13",
+      "name": {
+        "ar": "صادق عيسى",
+        "en": "Sadiq Issa"
+      },
+      "role": {
+        "ar": "مصور فيديو",
+        "en": "Videographer"
+      }
+    },
+    {
+      "id": "t14",
+      "name": {
+        "ar": "غيث سرمد",
+        "en": "Ghaith Sarmad"
+      },
+      "role": {
+        "ar": "مصور فيديو",
+        "en": "Videographer"
+      }
+    },
+    {
+      "id": "t15",
+      "name": {
+        "ar": "عاصم علي",
+        "en": "Asim Ali"
+      },
+      "role": {
+        "ar": "مونتير",
+        "en": "Video editor"
+      }
+    },
+    {
+      "id": "t16",
+      "name": {
+        "ar": "مصطفى أحمد",
+        "en": "Mustafa Ahmed"
+      },
+      "role": {
+        "ar": "مسؤول المونتاج",
+        "en": "Head of editing"
+      }
+    }
+  ]
+}
