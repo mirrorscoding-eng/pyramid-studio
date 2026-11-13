@@ -2,6 +2,7 @@ import { cache } from 'react';
 import { cookies } from 'next/headers';
 import { unstable_rethrow } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
+import { hasSupabase } from '@/lib/supabase/env';
 import { mergeContent, t } from './defaults';
 import type { Content, Lang } from './types';
 
@@ -9,6 +10,7 @@ export const CONTENT_ID = 'main';
 
 /** The whole site content, read once per request (database values over the defaults). */
 export const getContent = cache(async (): Promise<Content> => {
+  if (!hasSupabase) return mergeContent(null);
   try {
     const supabase = await createClient();
     const { data, error } = await supabase.from('site_content').select('data').eq('id', CONTENT_ID).maybeSingle();

@@ -1,6 +1,7 @@
 'use server';
 
 import { createClient } from '@/lib/supabase/server';
+import { hasSupabase } from '@/lib/supabase/env';
 
 export type SendResult = { ok: true } | { ok: false; error: 'required' | 'failed' };
 
@@ -14,6 +15,11 @@ export async function sendMessage(formData: FormData): Promise<SendResult> {
   const name = clip(formData.get('name'), 200);
   const phone = clip(formData.get('phone'), 40);
   if (!name || phone.length < 3) return { ok: false, error: 'required' };
+
+  if (!hasSupabase) {
+    console.error('[contact] Supabase is not configured (prototype mode); message not saved.');
+    return { ok: false, error: 'failed' };
+  }
 
   const supabase = await createClient();
   const { error } = await supabase.from('messages').insert({

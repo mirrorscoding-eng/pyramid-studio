@@ -1,8 +1,12 @@
 import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
+import { hasSupabase } from '@/lib/supabase/env';
 
 /** Keeps the dashboard login session fresh and sends signed-out visitors to the login page. */
 export async function proxy(request: NextRequest) {
+  // Prototype mode (no Supabase yet): there is no dashboard, send visitors to the site.
+  if (!hasSupabase) return NextResponse.redirect(new URL('/', request.url));
+
   let response = NextResponse.next({ request });
   const supabase = createServerClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!, {
     cookies: {
