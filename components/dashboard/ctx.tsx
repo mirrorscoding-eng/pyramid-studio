@@ -141,6 +141,7 @@ export const Icon = {
   layers: svg(<><path d="M12 3l9 5-9 5-9-5z" /><path d="M3 13l9 5 9-5" /></>, 1.8),
   team: svg(<><circle cx="9" cy="8" r="3.5" /><path d="M2.5 20a6.5 6.5 0 0 1 13 0" /><circle cx="17.5" cy="9" r="2.5" /><path d="M16 14.2A5 5 0 0 1 21.5 19" /></>, 1.8),
   clients: svg(<><rect x="3" y="3" width="7" height="7" rx="2" /><rect x="14" y="3" width="7" height="7" rx="2" /><rect x="3" y="14" width="7" height="7" rx="2" /><rect x="14" y="14" width="7" height="7" rx="2" /></>, 1.8),
+  toggle: svg(<><rect x="2" y="7" width="20" height="10" rx="5" /><circle cx="16" cy="12" r="2.6" /></>, 1.8),
   tag: svg(<><path d="M3 12l9-9h9v9l-9 9z" /><circle cx="16" cy="8" r="1.5" /></>, 1.8),
   settings: svg(<><circle cx="12" cy="12" r="3" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1" /></>, 1.8)
 };

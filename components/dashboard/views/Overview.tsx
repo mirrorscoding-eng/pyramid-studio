@@ -22,10 +22,11 @@ export function Overview() {
       <section className="card hello">
         <div>
           <h2>أهلاً، فريق <em>هرم.</em></h2>
-          <p>كل تعديل تحفظه هنا يظهر بالموقع لكل الزوار مباشرة. من القائمة تگدر تعدّل كل نص، صورة، خدمة وعمل بالموقع.</p>
+          <p>كل تعديل تحفظه هنا يظهر بالموقع لكل الزوار مباشرة. تگدر تضيف، تعدّل، تحذف، ترتّب، تغيّر الصور، وتشغّل أو تطفي أي شي — عضو، عمل، عميل، خدمة، أو قسم كامل.</p>
           <div className="actions">
             <button className="btn btn-ink" onClick={() => go('works', 'new')}>عمل جديد +</button>
             <button className="btn btn-line" onClick={() => go('texts')}>تعديل نصوص الصفحات</button>
+            <button className="btn btn-line" onClick={() => go('sections')}>شغّل / اطفي الأقسام</button>
             <a className="btn btn-line" href="/" target="_blank" rel="noopener">افتح الموقع ↗</a>
           </div>
         </div>
@@ -33,8 +34,8 @@ export function Overview() {
       </section>
 
       <section className="stats">
-        <div className="card stat dark"><span className="lbl">الأعمال المنشورة</span><span className="v">{content.works.length}</span><span className="ic">{Icon.works}</span></div>
-        <div className="card stat"><span className="lbl">أعمال مميزة</span><span className="v">{content.works.filter((w) => w.featured).length}</span><span className="ic">{Icon.star}</span></div>
+        <div className="card stat dark"><span className="lbl">الأعمال الظاهرة</span><span className="v">{content.works.filter((w) => !w.hidden).length}</span><span className="ic">{Icon.works}</span></div>
+        <div className="card stat"><span className="lbl">أعمال مميزة</span><span className="v">{content.works.filter((w) => w.featured && !w.hidden).length}</span><span className="ic">{Icon.star}</span></div>
         <div className="card stat"><span className="lbl">رسائل جديدة</span><span className="v">{unread}</span><span className="ic">{Icon.msg}</span></div>
         <div className="card stat"><span className="lbl">متابع إنستغرام</span><span className="v">{Number(content.settings.followers || 0).toLocaleString('en-US')}</span><span className="ic">{Icon.ig}</span></div>
       </section>

@@ -1,10 +1,11 @@
 import { t } from '@/lib/content/defaults';
-import { getContent, getLang, makeT } from '@/lib/content/server';
+import { getSiteContent, getLang, makeT } from '@/lib/content/server';
+import { sectionOn } from '@/lib/content/sections';
 import { HomeHero } from '@/components/site/HomeHero';
 import { ApproachRows, ClientsMarquee, Cta, Featured, Stats, featuredFirst } from '@/components/site/blocks';
 
 export default async function Home() {
-  const [c, lang] = await Promise.all([getContent(), getLang()]);
+  const [c, lang] = await Promise.all([getSiteContent(), getLang()]);
   const tx = makeT(c, lang);
   const keys = ['see_work', 'how', 'fc1_s', 'fc2_s', 'orbit_label', 'orbit_hint', 'trust', 'less', 'about_k', 'know_more'];
   const orbit = c.orbit
@@ -24,11 +25,11 @@ export default async function Home() {
         about={t(c.settings.about, lang)}
         tx={Object.fromEntries(keys.map((k) => [k, tx(k)]))}
       />
-      <ApproachRows c={c} lang={lang} />
-      <Featured c={c} lang={lang} />
-      <Stats c={c} lang={lang} />
-      <ClientsMarquee c={c} lang={lang} />
-      <Cta c={c} lang={lang} />
+      {sectionOn(c, 'home.approach') && <ApproachRows c={c} lang={lang} />}
+      {sectionOn(c, 'home.featured') && <Featured c={c} lang={lang} />}
+      {sectionOn(c, 'home.stats') && <Stats c={c} lang={lang} />}
+      {sectionOn(c, 'home.clients') && <ClientsMarquee c={c} lang={lang} />}
+      {sectionOn(c, 'home.cta') && <Cta c={c} lang={lang} />}
     </>
   );
 }

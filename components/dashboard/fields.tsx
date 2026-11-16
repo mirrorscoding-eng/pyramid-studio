@@ -76,6 +76,17 @@ export function MediaField({ label, value, onChange, kind = 'image', folder, con
   );
 }
 
+/** On/off switch: is this item shown on the site? */
+export function VisToggle({ on, onChange, label }: { on: boolean; onChange: (on: boolean) => void; label?: string }) {
+  return (
+    <button type="button" role="switch" aria-checked={on} className={`vis${on ? ' on' : ''}`}
+      aria-label={label ? `${label}: ${on ? 'ظاهر' : 'مطفي'}` : undefined}
+      title={on ? 'ظاهر بالموقع — اضغط حتى تطفيه' : 'مطفي — اضغط حتى يظهر بالموقع'} onClick={() => onChange(!on)}>
+      <span className="knob" /><span className="lbl">{on ? 'ظاهر' : 'مطفي'}</span>
+    </button>
+  );
+}
+
 export function MoveButtons({ i, n, onMove }: { i: number; n: number; onMove: (from: number, to: number) => void }) {
   return (
     <>

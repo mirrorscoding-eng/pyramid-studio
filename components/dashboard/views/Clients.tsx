@@ -2,7 +2,7 @@
 
 import { t } from '@/lib/content/defaults';
 import { Icon, uid, useDash, useDraft } from '../ctx';
-import { MediaField, MoveButtons, SaveBar, move } from '../fields';
+import { MediaField, MoveButtons, SaveBar, VisToggle, move } from '../fields';
 
 export function Clients() {
   const { confirm } = useDash();
@@ -10,14 +10,15 @@ export function Clients() {
   const upd = (i: number, patch: Partial<(typeof draft)[number]>) => setDraft(draft.map((c, j) => (j === i ? { ...c, ...patch } : c)));
   return (
     <div className="card">
-      <p className="muted" style={{ fontSize: 13.5, marginBottom: 8 }}>أول 3 شعارات تظهر بكروت الواجهة. الشعار الأسود (سلويت) يخلي الشعارات الملونة بلون واحد حتى تتناسق.</p>
+      <p className="muted" style={{ fontSize: 13.5, marginBottom: 8 }}>أول 3 شعارات ظاهرة تطلع بكروت الواجهة. اطفي أي عميل حتى يختفي من الموقع بدون ما تحذفه. الشعار الأسود (سلويت) يخلي الشعارات الملونة بلون واحد حتى تتناسق.</p>
       <div className="items">
         {draft.map((c, i) => (
-          <div className="item-card" key={c.id}>
+          <div className={`item-card${c.hidden ? ' is-off' : ''}`} key={c.id}>
             <div className="item-head">
               <span className="num">{String(i + 1).padStart(2, '0')}</span>
               <b>{t(c.name, 'ar') || 'عميل جديد'}</b>
               <span className="spacer" />
+              <VisToggle on={!c.hidden} label={t(c.name, 'ar')} onChange={(on) => upd(i, { hidden: !on })} />
               <MoveButtons i={i} n={draft.length} onMove={(a, b) => setDraft(move(draft, a, b))} />
               <button className="icon-btn danger" aria-label="حذف"
                 onClick={async () => { if (await confirm('حذف هذا العميل؟', t(c.name, 'ar'))) setDraft(draft.filter((_, j) => j !== i)); }}>{Icon.trash}</button>

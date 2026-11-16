@@ -18,9 +18,11 @@ export type Settings = {
   clientsCount: number;
   followers: number;
   posts: number;
+  /** Page sections switched off from the dashboard (key → false). Missing means on. */
+  sections?: Record<string, boolean>;
 };
 
-export type Category = { id: string; name: L };
+export type Category = { id: string; name: L; hidden?: boolean };
 
 export type Result = { value: string; label: L };
 
@@ -38,17 +40,18 @@ export type Work = {
   summary: L;
   services: string[];
   results: Result[];
+  hidden?: boolean;
 };
 
-export type Client = { id: string; name: L; logo: string };
-export type Member = { id: string; name: L; role: L; photo?: string; featured?: boolean };
+export type Client = { id: string; name: L; logo: string; hidden?: boolean };
+export type Member = { id: string; name: L; role: L; photo?: string; featured?: boolean; hidden?: boolean };
 
 export type ArtKey = 'analysis' | 'plans' | 'reports' | 'web' | 'content' | 'photo' | 'social' | 'ads' | 'color';
 
-export type Service = { id: string; art: ArtKey; title: L; desc: L };
-export type OrbitLabel = { service: string; sub: L };
-export type ApproachItem = { art: ArtKey; heading: L; title: L; desc: L };
-export type Step = { title: L; desc: L };
+export type Service = { id: string; art: ArtKey; title: L; desc: L; hidden?: boolean };
+export type OrbitLabel = { service: string; sub: L; hidden?: boolean };
+export type ApproachItem = { art: ArtKey; heading: L; title: L; desc: L; hidden?: boolean };
+export type Step = { title: L; desc: L; hidden?: boolean };
 
 export type Content = {
   settings: Settings;

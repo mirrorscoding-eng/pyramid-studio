@@ -4,6 +4,7 @@ import { unstable_rethrow } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { hasSupabase } from '@/lib/supabase/env';
 import { mergeContent, t } from './defaults';
+import { visibleContent } from './sections';
 import type { Content, Lang } from './types';
 
 export const CONTENT_ID = 'main';
@@ -22,6 +23,9 @@ export const getContent = cache(async (): Promise<Content> => {
     return mergeContent(null);
   }
 });
+
+/** What visitors see: the site content without anything switched off in the dashboard. */
+export const getSiteContent = cache(async (): Promise<Content> => visibleContent(await getContent()));
 
 export const getLang = cache(async (): Promise<Lang> => ((await cookies()).get('lang')?.value === 'en' ? 'en' : 'ar'));
 

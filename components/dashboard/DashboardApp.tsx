@@ -14,11 +14,13 @@ import { Team } from './views/Team';
 import { Clients } from './views/Clients';
 import { Categories } from './views/Categories';
 import { Settings } from './views/Settings';
+import { Sections } from './views/Sections';
 
 const VIEWS = [
   { id: 'overview', title: 'نظرة عامة', sub: 'ملخص سريع لمحتوى موقع هرم.', icon: Icon.overview },
   { id: 'works', title: 'الأعمال', sub: 'أضف، عدّل، ورتّب الأعمال اللي تظهر بالموقع.', icon: Icon.works },
   { id: 'messages', title: 'الرسائل', sub: 'طلبات العملاء من نموذج التواصل بالموقع.', icon: Icon.msg },
+  { id: 'sections', title: 'أقسام الصفحات', sub: 'شغّل أو اطفي أي قسم بصفحات الموقع — يتطبق فوراً.', icon: Icon.toggle },
   { id: 'texts', title: 'نصوص الصفحات', sub: 'كل نص يظهر بالموقع، مرتب حسب الصفحة.', icon: Icon.text },
   { id: 'services', title: 'الخدمات والنهج', sub: 'الخدمات، الدائرة حول الشعار، النهج، وخطوات آلية العمل.', icon: Icon.layers },
   { id: 'team', title: 'الفريق', sub: 'أعضاء الفريق اللي يظهرون بصفحة من نحن.', icon: Icon.team },
@@ -97,6 +99,7 @@ function Shell({ view, extra, go, side, setSide, email }: { view: ViewId; extra:
           {view === 'overview' && <Overview />}
           {view === 'works' && <Works openId={extra} />}
           {view === 'messages' && <Messages activeId={extra} />}
+          {view === 'sections' && <Sections />}
           {view === 'texts' && <Texts />}
           {view === 'services' && <ServicesView />}
           {view === 'team' && <Team />}

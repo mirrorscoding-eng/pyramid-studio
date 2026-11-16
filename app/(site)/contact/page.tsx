@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import { t } from '@/lib/content/defaults';
-import { getContent, getLang, makeT } from '@/lib/content/server';
+import { getSiteContent, getLang, makeT } from '@/lib/content/server';
+import { sectionOn } from '@/lib/content/sections';
 import { PageHero, digits, waLink } from '@/components/site/blocks';
 import { ContactForm } from '@/components/site/ContactForm';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const [c, lang] = await Promise.all([getContent(), getLang()]);
+  const [c, lang] = await Promise.all([getSiteContent(), getLang()]);
   return { title: makeT(c, lang)('meta_contact') };
 }
 
@@ -18,7 +19,7 @@ const ICONS = {
 };
 
 export default async function Contact() {
-  const [c, lang] = await Promise.all([getContent(), getLang()]);
+  const [c, lang] = await Promise.all([getSiteContent(), getLang()]);
   const tx = makeT(c, lang);
   const st = c.settings;
   const rows: [href: string, label: string, value: string, icon: React.ReactNode][] = [];
@@ -29,11 +30,14 @@ export default async function Contact() {
   if (st.studio) rows.push([`https://instagram.com/${st.studio}`, tx('i_studio'), '@' + st.studio, ICONS.studio]);
   const formKeys = ['form_h', 'form_p', 'f_name', 'f_company', 'f_phone', 'f_email', 'f_service', 'f_budget', 'f_message', 'optional', 'f_send', 'sent', 'required', 'saveFail'] as const;
 
+  const showInfo = sectionOn(c, 'contact.info');
+  const showForm = sectionOn(c, 'contact.form');
+
   return (
     <>
       <PageHero c={c} lang={lang} k="contact" artKey="social" />
-      <section className="sec" style={{ paddingTop: 50 }}><div className="container contact-grid">
-        <div className="reveal">
+      {(showInfo || showForm) && <section className="sec" style={{ paddingTop: 50 }}><div className="container contact-grid" style={showInfo && showForm ? undefined : { gridTemplateColumns: 'minmax(0, 720px)', justifyContent: 'center' }}>
+        {showInfo && <div className="reveal">
           <div className="info-list">
             {rows.map(([href, label, value, icon], i) => (
               <a className="info-row" href={href} key={i} {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener' } : {})}>
@@ -43,13 +47,13 @@ export default async function Contact() {
             ))}
           </div>
           <div className="hours"><b>{tx('hours_t')}</b><p>{tx('hours_p')}</p></div>
-        </div>
-        <ContactForm
+        </div>}
+        {showForm && <ContactForm
           tx={Object.fromEntries(formKeys.map((k) => [k, tx(k)])) as Record<(typeof formKeys)[number], string>}
           services={c.services.map((s) => ({ id: s.id, title: t(s.title, lang) }))}
           budgets={c.budgets.map((b, i) => ({ value: i === 0 ? '' : b.ar, label: t(b, lang) }))}
-        />
-      </div></section>
+        />}
+      </div></section>}
     </>
   );
 }

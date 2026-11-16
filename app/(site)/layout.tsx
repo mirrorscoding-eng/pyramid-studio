@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { logoSVG } from '@/lib/art';
-import { getContent, getLang, makeT } from '@/lib/content/server';
+import { getSiteContent, getLang, makeT } from '@/lib/content/server';
 import { Header } from '@/components/site/Header';
 import { SiteClient } from '@/components/site/SiteClient';
 import { Footer, NAV } from '@/components/site/blocks';
@@ -12,7 +12,7 @@ const SITE_URL =
   (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'https://pyramid-studio-xi.vercel.app');
 
 export async function generateMetadata(): Promise<Metadata> {
-  const [c, lang] = await Promise.all([getContent(), getLang()]);
+  const [c, lang] = await Promise.all([getSiteContent(), getLang()]);
   const tx = makeT(c, lang);
   return {
     metadataBase: new URL(SITE_URL),
@@ -32,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function SiteLayout({ children }: { children: React.ReactNode }) {
-  const [c, lang] = await Promise.all([getContent(), getLang()]);
+  const [c, lang] = await Promise.all([getSiteContent(), getLang()]);
   const tx = makeT(c, lang);
   return (
     <html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>

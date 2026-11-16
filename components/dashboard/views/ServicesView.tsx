@@ -5,7 +5,7 @@ import { ART_KEYS, art } from '@/lib/art';
 import { t } from '@/lib/content/defaults';
 import type { ArtKey, L } from '@/lib/content/types';
 import { Icon, uid, useDash, useDraft } from '../ctx';
-import { LField, MoveButtons, SaveBar, move } from '../fields';
+import { LField, MoveButtons, SaveBar, VisToggle, move } from '../fields';
 
 const ART_NAMES: Record<string, string> = {
   analysis: 'تحليل (عدسة)', plans: 'خطة (لوح)', reports: 'تقارير (رسم بياني)', web: 'موقع (متصفح)', content: 'كتابة (قلم)',
@@ -47,12 +47,15 @@ function ArtPicker({ value, onChange, id }: { value: ArtKey; onChange: (v: ArtKe
   );
 }
 
-function Head({ i, n, onMove, onDelete, children }: { i: number; n: number; onMove: (a: number, b: number) => void; onDelete: () => void; children?: React.ReactNode }) {
+function Head({ i, n, onMove, onDelete, children, hidden, onToggle }: {
+  i: number; n: number; onMove: (a: number, b: number) => void; onDelete: () => void; children?: React.ReactNode; hidden?: boolean; onToggle?: (hidden: boolean) => void;
+}) {
   return (
     <div className="item-head">
       <span className="num">{String(i + 1).padStart(2, '0')}</span>
       {children}
       <span className="spacer" />
+      {onToggle && <VisToggle on={!hidden} onChange={(on) => onToggle(!on)} />}
       <MoveButtons i={i} n={n} onMove={onMove} />
       <button type="button" className="icon-btn danger" aria-label="حذف" onClick={onDelete}>{Icon.trash}</button>
     </div>
@@ -69,11 +72,11 @@ function ServicesList() {
   const upd = (i: number, patch: Partial<(typeof draft)[number]>) => setDraft(draft.map((s, j) => (j === i ? { ...s, ...patch } : s)));
   return (
     <div className="card">
-      <Intro title="الخدمات" text="تظهر بصفحة الخدمات، بقائمة نموذج التواصل، وبالدائرة حول الشعار." />
+      <Intro title="الخدمات" text="تظهر بصفحة الخدمات، بقائمة نموذج التواصل، وبالدائرة حول الشعار. الخدمة المطفية تختفي من كل هذي الأماكن." />
       <div className="items">
         {draft.map((s, i) => (
-          <div className="item-card" key={s.id}>
-            <Head i={i} n={draft.length} onMove={(a, b) => setDraft(move(draft, a, b))}
+          <div className={`item-card${s.hidden ? ' is-off' : ''}`} key={s.id}>
+            <Head i={i} n={draft.length} onMove={(a, b) => setDraft(move(draft, a, b))} hidden={s.hidden} onToggle={(h) => upd(i, { hidden: h })}
               onDelete={async () => { if (await confirm('حذف هذه الخدمة؟', t(s.title, 'ar'))) setDraft(draft.filter((_, j) => j !== i)); }}>
               <ArtPicker id={'s' + i} value={s.art} onChange={(v) => upd(i, { art: v })} />
             </Head>
@@ -98,8 +101,8 @@ function OrbitList() {
       <Intro title="الدائرة حول الشعار" text="بطاقات الخدمات اللي تدور ويا الفيديوهات بالرئيسية. تظهر لحد 6 بطاقات، بين كل فيديو وفيديو." />
       <div className="items">
         {draft.map((o, i) => (
-          <div className="item-card" key={i}>
-            <Head i={i} n={draft.length} onMove={(a, b) => setDraft(move(draft, a, b))} onDelete={() => setDraft(draft.filter((_, j) => j !== i))}>
+          <div className={`item-card${o.hidden ? ' is-off' : ''}`} key={i}>
+            <Head i={i} n={draft.length} onMove={(a, b) => setDraft(move(draft, a, b))} onDelete={() => setDraft(draft.filter((_, j) => j !== i))} hidden={o.hidden} onToggle={(h) => upd(i, { hidden: h })}>
               <select className="select" style={{ width: 'auto' }} value={o.service} onChange={(e) => upd(i, { service: e.target.value })} aria-label="الخدمة">
                 {content.services.map((s) => <option key={s.id} value={s.id}>{t(s.title, 'ar')}</option>)}
               </select>
@@ -123,8 +126,8 @@ function ApproachList() {
       <Intro title="نهجنا" text="الصفوف المرسومة بالرئيسية، وبطاقات نهجنا والنقاط بصفحة من نحن." />
       <div className="items">
         {draft.map((a, i) => (
-          <div className="item-card" key={i}>
-            <Head i={i} n={draft.length} onMove={(x, y) => setDraft(move(draft, x, y))} onDelete={() => setDraft(draft.filter((_, j) => j !== i))}>
+          <div className={`item-card${a.hidden ? ' is-off' : ''}`} key={i}>
+            <Head i={i} n={draft.length} onMove={(x, y) => setDraft(move(draft, x, y))} onDelete={() => setDraft(draft.filter((_, j) => j !== i))} hidden={a.hidden} onToggle={(h) => upd(i, { hidden: h })}>
               <ArtPicker id={'a' + i} value={a.art} onChange={(v) => upd(i, { art: v })} />
             </Head>
             <LField label="العنوان الكبير" value={a.heading} onChange={(v) => upd(i, { heading: v })} />
@@ -148,8 +151,8 @@ function StepsList() {
       <Intro title="خطوات آلية العمل" text="بصفحة الخدمات. الهرم المرسوم بيه 6 طبقات، وكل طبقة مربوطة بخطوة بالترتيب — الأفضل تبقى 6 خطوات." />
       <div className="items">
         {draft.map((s, i) => (
-          <div className="item-card" key={i}>
-            <Head i={i} n={draft.length} onMove={(x, y) => setDraft(move(draft, x, y))} onDelete={() => setDraft(draft.filter((_, j) => j !== i))} />
+          <div className={`item-card${s.hidden ? ' is-off' : ''}`} key={i}>
+            <Head i={i} n={draft.length} onMove={(x, y) => setDraft(move(draft, x, y))} onDelete={() => setDraft(draft.filter((_, j) => j !== i))} hidden={s.hidden} onToggle={(h) => upd(i, { hidden: h })} />
             <LField label="عنوان الخطوة" value={s.title} onChange={(v) => upd(i, { title: v })} />
             <LField label="الشرح" long value={s.desc} onChange={(v) => upd(i, { desc: v })} />
           </div>

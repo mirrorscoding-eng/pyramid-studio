@@ -5,7 +5,7 @@ import { coverHTML, coverSVG, logoSVG } from '@/lib/art';
 import { t } from '@/lib/content/defaults';
 import type { Work } from '@/lib/content/types';
 import { Icon, clone, uid, useDash } from '../ctx';
-import { LField, MediaField, TextField, move } from '../fields';
+import { LField, MediaField, TextField, VisToggle, move } from '../fields';
 
 const blankWork = (category: string): Work => ({
   id: 'w' + uid(), category, year: new Date().getFullYear(), featured: false, cover: Math.floor(Math.random() * 6),
@@ -71,12 +71,14 @@ export function Works({ openId }: { openId?: string }) {
         ) : list.map((w) => {
           const i = works.indexOf(w);
           return (
-            <div className="w-row" key={w.id}>
+            <div className={`w-row${w.hidden ? ' is-off' : ''}`} key={w.id}>
               <div className="th" onClick={() => open(w.id)} dangerouslySetInnerHTML={{ __html: coverHTML(w, catEn(w.category)) }} />
-              <div className="tt"><b onClick={() => open(w.id)}>{t(w.title, 'ar')}</b><span>{t(w.client, 'ar')}</span></div>
+              <div className="tt"><b onClick={() => open(w.id)}>{t(w.title, 'ar')}</b><span>{t(w.client, 'ar')}{w.hidden && ' · مطفي — ما يظهر بالموقع'}</span></div>
               <div className="cat"><span className="chip">{catName(w.category)}</span></div>
               <div className="yr">{w.year}</div>
               <div className="acts">
+                <VisToggle on={!w.hidden} label={t(w.title, 'ar')}
+                  onChange={(on) => save('works', works.map((x) => (x.id === w.id ? { ...x, hidden: !on } : x)), on ? 'صار ظاهر بالموقع ✦' : 'انطفى — ما يظهر بالموقع')} />
                 <button className={`icon-btn${w.featured ? ' on' : ''}`} title="مميز" aria-label="مميز"
                   onClick={() => save('works', works.map((x) => (x.id === w.id ? { ...x, featured: !x.featured } : x)), '')}>{Icon.star}</button>
                 <button className="icon-btn mv" title="للأعلى" aria-label="للأعلى" disabled={!canMove || i === 0} onClick={() => save('works', move(works, i, i - 1), '')}>{Icon.up}</button>
@@ -163,6 +165,7 @@ function WorkEditor({ work: w, setWork, onClose, onSave, onDelete }: {
             <TextField label="السنة" ltr type="number" value={w.year} onChange={(v) => set('year', v ? Number(v) : '')} />
           </div>
           <label className="switch"><input type="checkbox" checked={w.featured} onChange={(e) => set('featured', e.target.checked)} /> عمل مميز (يظهر بالرئيسية وبعلامة ✦)</label>
+          <label className="switch"><input type="checkbox" checked={!w.hidden} onChange={(e) => set('hidden', !e.target.checked)} /> ظاهر بالموقع (شيل العلامة حتى تطفيه بدون ما تحذفه)</label>
 
           <div className="sec-title">التفاصيل</div>
           <LField label="وصف مختصر" long value={w.summary} onChange={(v) => set('summary', v)} />
