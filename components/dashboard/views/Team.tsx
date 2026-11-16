@@ -24,6 +24,11 @@ export function Team() {
               <input className="input" placeholder="Name (English)" aria-label="الاسم بالإنكليزي" dir="ltr" value={m.name.en} onChange={(e) => upd(i, 'name', 'en', e.target.value)} />
               <input className="input" placeholder="المنصب بالعربي" aria-label="المنصب بالعربي" value={m.role.ar} onChange={(e) => upd(i, 'role', 'ar', e.target.value)} />
               <input className="input" placeholder="Role (English)" aria-label="المنصب بالإنكليزي" dir="ltr" value={m.role.en} onChange={(e) => upd(i, 'role', 'en', e.target.value)} />
+              <label style={{ gridColumn: '1 / -1', display: 'flex', alignItems: 'center', gap: 8, fontSize: 13.5, cursor: 'pointer' }}>
+                <input type="checkbox" checked={!!m.featured}
+                  onChange={(e) => setDraft(draft.map((x, j) => (j === i ? { ...x, featured: e.target.checked } : x)))} />
+                مؤسس — تظهر بطاقته مميزة بالأعلى
+              </label>
               <div style={{ gridColumn: '1 / -1' }}>
                 <MediaField label="الصورة" value={m.photo || ''} folder="team" contain hint="يفضّل صورة مقصوصة بخلفية شفافة (PNG/WebP)."
                   onChange={(v) => setDraft(draft.map((x, j) => (j === i ? { ...x, photo: v } : x)))} />

@@ -239,6 +239,10 @@
       "ar": "ورا الشغل.",
       "en": "behind the work."
     },
+    "team_lead": {
+      "ar": "✦ مؤسس",
+      "en": "✦ Founder"
+    },
     "services_k": {
       "ar": "الخدمات",
       "en": "Services"
@@ -1137,6 +1141,7 @@
         "ar": "شريك مؤسس / مدير الفريق",
         "en": "Co-Founder / Team Director"
       },
+      "featured": true,
       "photo": "/team/member-01.webp"
     },
     {
@@ -1149,6 +1154,7 @@
         "ar": "شريك مؤسس / مسوّق",
         "en": "Co-Founder / Marketer"
       },
+      "featured": true,
       "photo": "/team/member-02.webp"
     },
     {

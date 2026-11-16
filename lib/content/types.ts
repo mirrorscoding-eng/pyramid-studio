@@ -41,7 +41,7 @@ export type Work = {
 };
 
 export type Client = { id: string; name: L; logo: string };
-export type Member = { id: string; name: L; role: L; photo?: string };
+export type Member = { id: string; name: L; role: L; photo?: string; featured?: boolean };
 
 export type ArtKey = 'analysis' | 'plans' | 'reports' | 'web' | 'content' | 'photo' | 'social' | 'ads' | 'color';
 

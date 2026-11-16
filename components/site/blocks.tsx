@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { art, engravedPyramid, logoSVG } from '@/lib/art';
 import { t } from '@/lib/content/defaults';
 import { makeT } from '@/lib/content/server';
-import type { Content, Lang, Work } from '@/lib/content/types';
+import type { Content, Lang, Member, Work } from '@/lib/content/types';
 import { ReelCard } from './ReelCard';
 import { Html, Svg } from './Svg';
 
@@ -187,22 +187,25 @@ export function ApproachCards({ c, lang }: P) {
 export function Team({ c, lang }: P) {
   const tx = makeT(c, lang);
   if (!c.team.length) return null;
+  const leads = c.team.filter((m) => m.featured);
+  const rest = c.team.filter((m) => !m.featured);
+  const card = (m: Member, lead: boolean) => (
+    <article className={`member reveal${m.photo ? ' has-photo' : ''}${lead ? ' lead' : ''}`} key={m.id}>
+      {lead && <span className="lead-tag">{tx('team_lead')}</span>}
+      {m.photo ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <div className="portrait"><img src={m.photo} alt={t(m.name, lang)} loading={lead ? 'eager' : 'lazy'} decoding="async" /></div>
+      ) : (
+        <div className="av"><span>{(t(m.name, lang) || '?').trim().charAt(0)}</span></div>
+      )}
+      <b>{t(m.name, lang)}</b><small>{t(m.role, lang)}</small>
+    </article>
+  );
   return (
     <section className="sec" style={{ background: 'var(--paper-2)', borderBlock: '1px solid var(--line)' }}><div className="container">
       <div className="sec-head reveal"><div><span className="kicker">{tx('team_k')}</span><TwoLine a={tx('team_h1')} b={tx('team_h2')} /></div></div>
-      <div className="team">
-        {c.team.map((m) => (
-          <article className={`member reveal${m.photo ? ' has-photo' : ''}`} key={m.id}>
-            {m.photo ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <div className="portrait"><img src={m.photo} alt={t(m.name, lang)} loading="lazy" decoding="async" /></div>
-            ) : (
-              <div className="av"><span>{(t(m.name, lang) || '?').trim().charAt(0)}</span></div>
-            )}
-            <b>{t(m.name, lang)}</b><small>{t(m.role, lang)}</small>
-          </article>
-        ))}
-      </div>
+      {leads.length > 0 && <div className="team-lead">{leads.map((m) => card(m, true))}</div>}
+      {rest.length > 0 && <div className="team">{rest.map((m) => card(m, false))}</div>}
     </div></section>
   );
 }
