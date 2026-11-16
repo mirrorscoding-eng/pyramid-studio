@@ -6,14 +6,28 @@ import { SiteClient } from '@/components/site/SiteClient';
 import { Footer, NAV } from '@/components/site/blocks';
 import './site.css';
 
+// Absolute base for og:image and other share links (WhatsApp ignores relative URLs).
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'https://pyramid-studio-xi.vercel.app');
+
 export async function generateMetadata(): Promise<Metadata> {
   const [c, lang] = await Promise.all([getContent(), getLang()]);
   const tx = makeT(c, lang);
   return {
+    metadataBase: new URL(SITE_URL),
     title: tx('meta_home'),
     description: tx('meta_desc'),
     icons: { icon: '/favicon.svg' },
-    openGraph: { title: tx('meta_home'), description: tx('meta_desc') }
+    openGraph: {
+      type: 'website',
+      siteName: lang === 'ar' ? 'استوديو هرم' : 'Pyramid Studio',
+      locale: lang === 'ar' ? 'ar_IQ' : 'en_US',
+      title: tx('meta_home'),
+      description: tx('meta_desc'),
+      url: '/'
+    },
+    twitter: { card: 'summary_large_image', title: tx('meta_home'), description: tx('meta_desc') }
   };
 }
 
