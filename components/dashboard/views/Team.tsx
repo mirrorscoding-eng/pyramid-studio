@@ -2,7 +2,7 @@
 
 import { t } from '@/lib/content/defaults';
 import { Icon, uid, useDash, useDraft } from '../ctx';
-import { MoveButtons, SaveBar, move } from '../fields';
+import { MediaField, MoveButtons, SaveBar, move } from '../fields';
 import { initial } from './util';
 
 export function Team() {
@@ -15,12 +15,19 @@ export function Team() {
       <div className="l-list">
         {draft.map((m, i) => (
           <div className="l-row" key={m.id}>
-            <span className="av">{initial(t(m.name, 'ar'))}</span>
+            <span className="av" style={m.photo ? { overflow: 'hidden', background: 'var(--paper-2)' } : undefined}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              {m.photo ? <img src={m.photo} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} /> : initial(t(m.name, 'ar'))}
+            </span>
             <div className="l-fields">
               <input className="input" placeholder="الاسم بالعربي" aria-label="الاسم بالعربي" value={m.name.ar} onChange={(e) => upd(i, 'name', 'ar', e.target.value)} />
               <input className="input" placeholder="Name (English)" aria-label="الاسم بالإنكليزي" dir="ltr" value={m.name.en} onChange={(e) => upd(i, 'name', 'en', e.target.value)} />
               <input className="input" placeholder="المنصب بالعربي" aria-label="المنصب بالعربي" value={m.role.ar} onChange={(e) => upd(i, 'role', 'ar', e.target.value)} />
               <input className="input" placeholder="Role (English)" aria-label="المنصب بالإنكليزي" dir="ltr" value={m.role.en} onChange={(e) => upd(i, 'role', 'en', e.target.value)} />
+              <div style={{ gridColumn: '1 / -1' }}>
+                <MediaField label="الصورة" value={m.photo || ''} folder="team" contain hint="يفضّل صورة مقصوصة بخلفية شفافة (PNG/WebP)."
+                  onChange={(v) => setDraft(draft.map((x, j) => (j === i ? { ...x, photo: v } : x)))} />
+              </div>
             </div>
             <div className="acts" style={{ display: 'flex', gap: 6 }}>
               <MoveButtons i={i} n={draft.length} onMove={(a, b) => setDraft(move(draft, a, b))} />

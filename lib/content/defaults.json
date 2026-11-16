@@ -1135,8 +1135,9 @@
       },
       "role": {
         "ar": "شريك مؤسس / مدير الفريق",
-        "en": "Co-founder / Team lead"
-      }
+        "en": "Co-Founder / Team Director"
+      },
+      "photo": "/team/member-01.webp"
     },
     {
       "id": "t2",
@@ -1146,8 +1147,9 @@
       },
       "role": {
         "ar": "شريك مؤسس / مسوّق",
-        "en": "Co-founder / Marketer"
-      }
+        "en": "Co-Founder / Marketer"
+      },
+      "photo": "/team/member-02.webp"
     },
     {
       "id": "t3",
@@ -1157,19 +1159,21 @@
       },
       "role": {
         "ar": "مديرة المشاريع",
-        "en": "Project manager"
-      }
+        "en": "Project Manager"
+      },
+      "photo": "/team/member-03.webp"
     },
     {
       "id": "t4",
       "name": {
         "ar": "مصطفى نبيل",
-        "en": "Mustafa Nabeel"
+        "en": "Mustafa Nabil"
       },
       "role": {
         "ar": "مدير المالية",
-        "en": "Finance manager"
-      }
+        "en": "Finance Director"
+      },
+      "photo": "/team/member-04.webp"
     },
     {
       "id": "t5",
@@ -1179,8 +1183,9 @@
       },
       "role": {
         "ar": "مصمم گرافك",
-        "en": "Graphic designer"
-      }
+        "en": "Graphic Designer"
+      },
+      "photo": "/team/member-05.webp"
     },
     {
       "id": "t6",
@@ -1190,8 +1195,9 @@
       },
       "role": {
         "ar": "مصمم گرافك",
-        "en": "Graphic designer"
-      }
+        "en": "Graphic Designer"
+      },
+      "photo": "/team/member-06.webp"
     },
     {
       "id": "t7",
@@ -1201,8 +1207,9 @@
       },
       "role": {
         "ar": "مصمم گرافك",
-        "en": "Graphic designer"
-      }
+        "en": "Graphic Designer"
+      },
+      "photo": "/team/member-07.webp"
     },
     {
       "id": "t8",
@@ -1212,19 +1219,21 @@
       },
       "role": {
         "ar": "مسؤولة المنصات الألكترونية",
-        "en": "Social platforms lead"
-      }
+        "en": "Digital Platforms Manager"
+      },
+      "photo": "/team/member-08.webp"
     },
     {
       "id": "t9",
       "name": {
         "ar": "بنين سعد",
-        "en": "Baneen Saad"
+        "en": "Banin Saad"
       },
       "role": {
         "ar": "كاتبة محتوى إبداعي",
-        "en": "Creative content writer"
-      }
+        "en": "Creative Content Writer"
+      },
+      "photo": "/team/member-09.webp"
     },
     {
       "id": "t10",
@@ -1234,8 +1243,9 @@
       },
       "role": {
         "ar": "مدير تصوير",
-        "en": "Director of photography"
-      }
+        "en": "Director of Photography"
+      },
+      "photo": "/team/member-10.webp"
     },
     {
       "id": "t11",
@@ -1246,7 +1256,8 @@
       "role": {
         "ar": "مصور فيديو",
         "en": "Videographer"
-      }
+      },
+      "photo": "/team/member-11.webp"
     },
     {
       "id": "t12",
@@ -1257,7 +1268,8 @@
       "role": {
         "ar": "مصور فوتوغراف",
         "en": "Photographer"
-      }
+      },
+      "photo": "/team/member-12.webp"
     },
     {
       "id": "t13",
@@ -1268,7 +1280,8 @@
       "role": {
         "ar": "مصور فيديو",
         "en": "Videographer"
-      }
+      },
+      "photo": "/team/member-13.webp"
     },
     {
       "id": "t14",
@@ -1279,7 +1292,8 @@
       "role": {
         "ar": "مصور فيديو",
         "en": "Videographer"
-      }
+      },
+      "photo": "/team/member-14.webp"
     },
     {
       "id": "t15",
@@ -1289,8 +1303,9 @@
       },
       "role": {
         "ar": "مونتير",
-        "en": "Video editor"
-      }
+        "en": "Video Editor"
+      },
+      "photo": "/team/member-15.webp"
     },
     {
       "id": "t16",
@@ -1300,8 +1315,9 @@
       },
       "role": {
         "ar": "مسؤول المونتاج",
-        "en": "Head of editing"
-      }
+        "en": "Editing Supervisor"
+      },
+      "photo": "/team/member-16.webp"
     }
   ]
 }

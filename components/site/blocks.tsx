@@ -192,8 +192,13 @@ export function Team({ c, lang }: P) {
       <div className="sec-head reveal"><div><span className="kicker">{tx('team_k')}</span><TwoLine a={tx('team_h1')} b={tx('team_h2')} /></div></div>
       <div className="team">
         {c.team.map((m) => (
-          <article className="member reveal" key={m.id}>
-            <div className="av"><span>{(t(m.name, lang) || '?').trim().charAt(0)}</span></div>
+          <article className={`member reveal${m.photo ? ' has-photo' : ''}`} key={m.id}>
+            {m.photo ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <div className="portrait"><img src={m.photo} alt={t(m.name, lang)} loading="lazy" decoding="async" /></div>
+            ) : (
+              <div className="av"><span>{(t(m.name, lang) || '?').trim().charAt(0)}</span></div>
+            )}
             <b>{t(m.name, lang)}</b><small>{t(m.role, lang)}</small>
           </article>
         ))}
